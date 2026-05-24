@@ -1,12 +1,14 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Items from "./components/items";
+import AuthPage from "./components/AuthPage";
 
 class App extends React.Component {
-  constructor(props){
-  super(props)
-  this.state = {
+  constructor(props) {
+    super(props);
+    this.state = {
     items: [
       {
       id: 1,
@@ -52,14 +54,31 @@ class App extends React.Component {
     }
   }
   render() {
-  return (
-   <div className="wrapper">
-    <Header/>
-    <Items items= {this.state.items}/>
-    <Footer/>
-    </div>
-  );
- }
+    return (
+      <BrowserRouter>
+        <div className="wrapper">
+          <Routes>
+            {/* Главная страница */}
+            <Route path="/" element={
+              <>
+                <Header />
+                <Items items={this.state.items} />
+                <Footer />
+              </>
+            } />
+            
+            {/* Страница входа - Header без корзины и presentation */}
+            <Route path="/login" element={
+              <>
+                <Header />
+                <AuthPage />
+              </>
+            } />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

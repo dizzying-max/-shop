@@ -156,3 +156,136 @@ header .presentation::before {
         margin-top: 100px;
 
     }
+    /* AuthPage.css */
+
+.auth-page {
+    max-width: 450px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .auth-page h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .auth-page .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .auth-page label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .auth-page input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .auth-page input:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
+  }
+  
+  .auth-page button {
+    width: 100%;
+    padding: 14px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .auth-page button:hover {
+    background: #5a52e0;
+  }
+  
+  .auth-page .register-link {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+  }
+  
+  .auth-page .register-link a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+  
+  .auth-page .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .auth-page .back-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .auth-page .back-link a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .auth-page .back-link a:hover {
+    color: #6c63ff;
+  }
+  /* Стили для навигации */
+.nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .nav li:hover {
+    color: #6c63ff;
+  }
+  /* Стили для логотипа как ссылки */
+.logo {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo:hover {
+    opacity: 0.8;
+  }
+  
+  /* Убираем подчёркивание у Link */
+  .logo-link {
+    text-decoration: none;
+  }
